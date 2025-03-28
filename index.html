@@ -1,0 +1,195 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Harish KP | Portfolio</title>  
+    <style>  
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');  
+
+        /* General Styling */  
+        body {  
+            background-color: #0a0a0a;  
+            color: #ffffff;  
+            font-family: 'Orbitron', sans-serif;  
+            text-align: center;  
+            margin: 0;  
+            padding: 0;  
+            overflow-x: hidden;  
+        }  
+
+        /* Animated Background */  
+        body::before {  
+            content: "";  
+            position: fixed;  
+            top: 0;  
+            left: 0;  
+            width: 100%;  
+            height: 100%;  
+            background: radial-gradient(circle, rgba(0, 255, 0, 0.2), rgba(0, 0, 0, 1));  
+            z-index: -1;  
+            animation: backgroundFlow 6s infinite alternate;  
+        }  
+
+        @keyframes backgroundFlow {  
+            0% { transform: scale(1); }  
+            100% { transform: scale(1.1); }  
+        }  
+
+        header {  
+            padding: 20px;  
+            animation: fadeIn 2s ease-in-out;  
+        }  
+
+        /* Glowing Effect */  
+        .glow {  
+            font-size: 2.5rem;  
+            font-weight: bold;  
+            text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00;  
+        }  
+
+        .subtitle {  
+            font-size: 1.2rem;  
+            color: #ccc;  
+            opacity: 0.8;  
+        }  
+
+        /* Navigation Bar */  
+        nav ul {  
+            list-style: none;  
+            padding: 0;  
+            background: rgba(255, 255, 255, 0.1);  
+            backdrop-filter: blur(10px);  
+            padding: 15px;  
+            margin: 0;  
+        }  
+
+        nav ul li {  
+            display: inline;  
+            margin: 15px;  
+        }  
+
+        nav ul li a {  
+            color: #00ff00;  
+            text-decoration: none;  
+            font-size: 1.2rem;  
+            transition: color 0.3s ease-in-out;  
+        }  
+
+        nav ul li a:hover {  
+            color: #ffffff;  
+            text-shadow: 0 0 10px #00ff00;  
+        }  
+
+        /* Sections */  
+        section {  
+            padding: 40px;  
+            margin: 20px auto;  
+            width: 80%;  
+            border-radius: 10px;  
+            background: rgba(0, 0, 0, 0.8);  
+            box-shadow: 0 0 20px #00ff00;  
+            transition: transform 0.3s ease-in-out;  
+            animation: fadeIn 1.5s ease-in-out;  
+        }  
+
+        section:hover {  
+            transform: scale(1.02);  
+        }  
+
+        /* Buttons */  
+        .button {  
+            padding: 12px 25px;  
+            background-color: #00ff00;  
+            color: #000;  
+            text-decoration: none;  
+            border-radius: 5px;  
+            font-size: 1.2rem;  
+            display: inline-block;  
+            transition: background 0.3s, box-shadow 0.3s;  
+        }  
+
+        .button:hover {  
+            background-color: #008000;  
+            box-shadow: 0 0 20px #00ff00;  
+        }  
+
+        /* Animations */  
+        @keyframes fadeIn {  
+            from { opacity: 0; transform: translateY(-20px); }  
+            to { opacity: 1; transform: translateY(0); }  
+        }  
+
+        /* Glitch Effect */  
+        .glitch {  
+            position: relative;  
+            animation: glitch 1s infinite alternate;  
+        }  
+
+        @keyframes glitch {  
+            0% { text-shadow: 2px 2px #ff0000, -2px -2px #00ff00; }  
+            100% { text-shadow: -2px -2px #ff0000, 2px 2px #00ff00; }  
+        }  
+
+        /* Footer */  
+        footer {  
+            padding: 15px;  
+            font-size: 0.9rem;  
+            background: rgba(255, 255, 255, 0.1);  
+            backdrop-filter: blur(10px);  
+        }  
+
+    </style>
+</head>  
+<body>  
+    <header>  
+        <h1 class="glow glitch">Harish KP</h1>  
+        <p class="subtitle">Aspiring Software Developer</p>  
+    </header>  
+
+    <nav>  
+        <ul>  
+            <li><a href="#about">About</a></li>  
+            <li><a href="#skills">Skills</a></li>  
+            <li><a href="#projects">Projects</a></li>  
+            <li><a href="#resume">Resume</a></li>  
+            <li><a href="#contact">Contact</a></li>  
+        </ul>  
+    </nav>  
+
+    <section id="about">  
+        <h2 class="glow">About Me</h2>  
+        <p>I am a <strong>BCA student</strong> passionate about <strong>software development, problem-solving, and technology</strong>.</p>  
+    </section>  
+
+    <section id="skills">  
+        <h2 class="glow">Skills</h2>  
+        <ul>  
+            <li>Basics of Python</li>  
+            <li>Basics of Linux</li>  
+            <li>SQL</li>  
+        </ul>  
+    </section>  
+
+    <section id="projects">  
+        <h2 class="glow">Projects</h2>  
+        <p><strong>Digital Portfolio</strong> - A personal portfolio website showcasing my skills, projects, and resume.</p>  
+    </section>  
+
+    <section id="resume">  
+        <h2 class="glow">Resume</h2>  
+        <a href="HARISH.pdf" class="button">Download Resume</a>  
+    </section>  
+
+    <section id="contact">  
+        <h2 class="glow">Contact</h2>  
+        <p>📞 6374601594</p>  
+        <p>📧 vn0012828@gmail.com</p>  
+        <p>🔗 <a href="https://www.linkedin.com/in/harish-k-p-6611092a9" target="_blank">LinkedIn: Harish KP</a></p>  
+    </section>  
+
+    <footer>  
+        <p>© HARISH.pdf | Digital Portfolio</p>  
+    </footer>  
+</body>  
+</html>
